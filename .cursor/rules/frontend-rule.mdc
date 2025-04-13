@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Best practices for frontend development emphasizing responsive design, robust state management, and a maintainable component structure.
+globs:
+---
+# Frontend Development Guidelines
+
+## Basic Styling:
+- Clean, minimalistic UI similar to Linear. You can use a framework like ShadcnUI
+
+## Responsive Design
+- Ensure the application adapts gracefully to various screen sizes using responsive design techniques (e.g., media queries or CSS frameworks like ShadcnUI/Tailwind).
+- Optimize images and assets to improve load times on all devices.
+- Test the UI on multiple devices and orientations.
+
+## State Management
+- Adopt a clear state management strategy (such as Redux, Vuex, or the Context API) to handle application state predictably.
+- Keep local component state minimal and centralize the shared state where needed.
+- Ensure state flows are unidirectional and easy to trace for debugging.
+
+## Component Structure and Organization
+- Build UI components that are modular and reusable.
+- Follow atomic design principles by creating small, focused building blocks (atoms, molecules, organisms) that compose larger interfaces.
+- Use proper component naming conventions and folder structures to improve maintainability.

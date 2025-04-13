@@ -1,0 +1,25 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Guidelines to enforce scalable design with proper separation of concerns. Apply these rules to ensure the architecture is modular and easy to maintain.
+globs:
+---
+# Architectural Guidelines
+
+## Separation of Concerns
+- Divide the application into clear layers (e.g., presentation, business logic, data access).
+- Avoid mixing UI code with business logic—each module should have a single, clear responsibility.
+- Implement design patterns (such as MVC, MVVM, or Clean Architecture) where they add clarity.
+
+## Scalability & Maintainability
+- Design modules to be independently testable, deployable, and maintainable.
+- Use dependency injection and inversion of control to reduce tight coupling between components.
+- Document high-level architecture decisions and update them as the project evolves.
+
+## Future-Proofing
+- Anticipate growth by choosing frameworks and tools known for scalability.
+- Maintain abstraction barriers that can be refactored as your needs change.
+- Plan for extensibility by designing clear interfaces between components.

@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Guidelines for backend development focusing on robust API design, effective database integration, and secure authentication implementation.
+globs:
+---
+# Backend Development Guidelines
+
+## User and team management feature
+- Use SaaS tools like Auth0/Clerk
+
+## API Design
+- Design RESTful APIs (or GraphQL endpoints where appropriate) with consistency.
+- Document API endpoints thoroughly using tools like Swagger/OpenAPI.
+- Implement versioning to facilitate backward compatibility as the API evolves.
+
+## Database Integration
+- Use ORMs or query builders to streamline database operations and reduce boilerplate.
+- Apply normalization principles and define clear data schemas for database consistency.
+- Implement proper error handling, logging, and transaction management to ensure data integrity.
+
+## Authentication & Security
+- Implement secure authentication and authorization methods (e.g., OAuth 2.0, JWT).
+- Enforce strict input validation and follow best practices for storing sensitive data.
+- Audit your security measures regularly and use industry-standard encryption methods.

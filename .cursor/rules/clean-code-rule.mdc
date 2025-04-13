@@ -1,0 +1,25 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Guidelines for producing clean, well-organized, and commented code. Apply these rules when writing, reviewing, and refactoring code to improve readability and maintainability.
+globs:
+---
+# Code Quality Guidelines
+
+## Clean Code Practices
+- Write code that is self-explanatory by using descriptive names for variables, functions, and classes.
+- Maintain a consistent coding style throughout the project.
+- Avoid unnecessary complexity; strive for simplicity in your implementation.
+
+## Documentation & Commenting
+- Document the purpose and rationale behind complex logic and design decisions.
+- Use inline comments sparingly; let the code be self-documenting where possible.
+- Use structured documentation (such as JSDoc or docstrings) for public APIs and modules.
+
+## Refactoring & Reusability
+- Regularly refactor code to eliminate duplication (DRY principle).
+- Break down large functions or classes into smaller, reusable, and focused units.
+- Keep frequently used code in shared libraries or dedicated modules.

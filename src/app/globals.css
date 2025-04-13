@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 248, 250, 252;
+  --primary-color: 37, 99, 235;
+  --success-color: 34, 197, 94;
+  --warning-color: 234, 179, 8;
+  --danger-color: 239, 68, 68;
+  --info-color: 6, 182, 212;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+.status-page-header {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.status-card {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.status-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status-badge {
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.status-badge-operational {
+  background-color: rgb(var(--success-color));
+  color: white;
+}
+
+.status-badge-degraded {
+  background-color: rgb(var(--warning-color));
+  color: white;
+}
+
+.status-badge-partial {
+  background-color: rgb(var(--warning-color));
+  color: white;
+}
+
+.status-badge-major {
+  background-color: rgb(var(--danger-color));
+  color: white;
+}
+
+.status-badge-maintenance {
+  background-color: rgb(var(--info-color));
+  color: white;
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e5e7eb;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid rgb(var(--primary-color));
+} 

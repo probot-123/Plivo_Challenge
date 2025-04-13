@@ -1,0 +1,56 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Guidelines and objectives for creating a simplified status page application with full CRUD, real-time updates, and public viewing.
+globs:
+  - "**/*.js"
+  - "**/*.ts"
+  - "**/*.jsx"
+  - "**/*.tsx"
+  - "**/*.md"
+---
+
+# Status Page Application Rules
+
+## Objective
+Create a simplified version of a status page application (similar to StatusPage, Cachet, Betterstack, or Openstatus) where administrators can log, view, and manage the status of multiple applications. The application must also provide a public-facing page for users to check real-time statuses.
+
+## Project Scope
+- **Working Application:** The product should be a fully functioning application that handles service status management.
+- **User Interaction:** Allow both administrators (for managing statuses, incidents, and maintenance) and end users (for viewing current service statuses and incident history) to interact seamlessly with the application.
+- **Front-End Framework:** Use any framework you are comfortable with (e.g., React, Vue.js) ensuring responsiveness and a clean, minimalistic UI.
+
+## Key Features
+
+### 1. User Authentication
+- **Secure Login:** Implement secure authentication for administrators.
+- **Session Management:** Ensure proper session handling and protection against unauthorized access.
+
+### 2. Team Management
+- **Collaboration:** Support the creation and management of teams for coordinated service management.
+
+### 3. Organization (Multi-Tenant)
+- **Tenant Isolation:** Enable a multi-tenant environment where service status data can be isolated for different organizations.
+
+### 4. Service Management
+- **CRUD Operations:** Allow creating, reading, updating, and deleting of services (e.g., "Website", "API", "Database").
+- **Status Updates:** Permit administrators to update a service's status among predefined states such as "Operational", "Degraded Performance", "Partial Outage", and "Major Outage".
+
+### 5. Incident/Maintenance Management
+- **Incident Lifecycle:** Enable the creation, updating, resolution, and real-time tracking of incidents and scheduled maintenance.
+- **Association:** Link incidents to specific services and allow adding updates to ongoing issues.
+
+### 6. Real-time Status Updates
+- **WebSocket Integration:** Use a real-time communication channel (e.g., WebSockets) to push status changes to connected clients instantly.
+
+### 7. Public Status Page
+- **Viewer Experience:** Develop a public page that displays the current status of all services.
+- **Incident Timeline:** Include active incidents, scheduled maintenances, and a timeline view for recent status changes.
+
+### 8. Basic Styling & UI
+- **Clean Design:** Ensure the UI is minimalistic and intuitive—similar to Linear.
+- **Responsiveness:** Make sure the design is responsive across devices.
+
