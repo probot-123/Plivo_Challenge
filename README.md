@@ -228,3 +228,7 @@ The application includes comprehensive API documentation:
 - **Endpoint Documentation**: Each endpoint includes detailed parameter and response documentation
 - **Authentication Requirements**: Clear documentation of auth requirements for each endpoint
 
+
+This application could not not be deployed due to build issues.You can test on localhost.
+Loom video link->https://www.loom.com/share/e35464ab963d4b989dde271d5be996d4?sid=49957114-b97b-495f-a163-a5a6838c4318
+
